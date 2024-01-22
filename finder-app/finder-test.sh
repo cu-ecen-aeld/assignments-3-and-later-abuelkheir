@@ -51,11 +51,13 @@ fi
 #echo "Removing the old writer utility and compiling as a native application"
 #make clean
 #make
+#for assignment 3 part 1 disabled make part 
 
 for i in $( seq 1 $NUMFILES)
 do
 	# Replaced the usage of writer.sh with your compiled "writer" utility
-	./writer "$WRITEDIR/${username}$i.txt" "$WRITESTR"
+	# ./writer "$WRITEDIR/${username}$i.txt" "$WRITESTR"
+
 done
 
 OUTPUTSTRING=$(./finder.sh "$WRITEDIR" "$WRITESTR")
